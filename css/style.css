@@ -205,3 +205,104 @@ z-index: 1000;
  /* ----------------------------------------------------------------
     Isotope Filtering
 -----------------------------------------------------------------*/
+
+ .isotope-item {
+     z-index: 2;
+ }
+
+ .isotope-hidden.isotope-item {
+     pointer-events: none;
+     z-index: 1;
+ }
+ /*Isotope CSS3 transitions */
+
+ .isotope, .isotope .isotope-item {
+     -webkit-transition-duration: 0.8s;
+     transition-duration: 0.8s;
+ }
+
+ .isotope {
+     -webkit-transition-property: height, width;
+     transition-property: height, width;
+ }
+
+ .isotope .isotope-item {
+     -webkit-transition-property: -webkit-transform, opacity;
+     transition-property: transform, opacity;
+ }
+ /*disabling Isotope CSS3 transitions */
+
+ .isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+     -webkit-transition-duration: 0s;
+     transition-duration: 0s;
+ }
+ /* disable CSS transitions for containers with infinite scrolling*/
+
+ .isotope.infinite-scrolling {
+     -webkit-transition: none;
+     transition: none;
+ }
+ /*--------------------------------------
+    portfolio details
+--------------------------------------*/
+
+ .fit-img img {
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+ }
+
+ .p-list {
+     padding: 0;
+     list-style: none;
+     margin-bottom: 40px;
+ }
+
+ .p-list li {
+     display: block;
+     line-height: 25px;
+     margin-bottom: 5px;
+ }
+
+ .p-list li span {
+     width: 115px;
+     display: inline-block;
+     text-transform: uppercase;
+     color: #222;
+     font-weight: bold;
+     font-size: 12px;
+ }
+
+ .p-list li div.s-link, .p-list li div.s-link a {
+     display: inline-block;
+ }
+
+ .p-list li div.s-link a {
+     color: #cdcdcd;
+     margin: 0 5px;
+ }
+
+ .p-list li div.s-link a:hover {
+     color: #222;
+ }
+
+ .img-info {
+     color: #9b9b9b;
+     margin-bottom: 50px;
+     display: block;
+     font-size: 13px;
+     font-style: italic;
+ }
+
+ .social-share a {
+     margin: 0 10px;
+     color: #7c7c7c;
+     text-transform: uppercase;
+     font-size: 13px;
+ }
+
+ .social-share a i {
+     margin-right: 10px;
+     color: #222;
+     font-size: 16px;
+ }
