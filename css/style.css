@@ -33,3 +33,57 @@ body {
 .carousel-inner {
     height: 100%;
 }
+
+
+/*======================PROJET=======================*/
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+.morad{
+  text-align: center;
+}
+ .portfolio-wrapper {
+     overflow: hidden;
+ }
+
+ .portfolio-wrapper>.row {
+     margin-left: -20px;
+     margin-right: -20px;
+ }
+
+ .portfolio-filter {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+     position: fixed;
+background: white;
+
+z-index: 1000;
+ }
+
+ .portfolio-filter li {
+     display: inline-block;
+ }
+
+ .portfolio-filter li a {
+     color: #a9a8a8;
+     margin: 0 15px;
+     text-transform: uppercase;
+     font-size: 12px;
+     letter-spacing: 1px;
+ }
+
+ .portfolio-filter li a:hover, .portfolio-filter li.active a, .f-link li a:hover, .f-link li.active a {
+     color: #222222;
+ }
+ /*----------------------------*/
